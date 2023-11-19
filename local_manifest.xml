@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="dev" fetch="https://github.com/mt6768-dev" />
+  <remote name="miguelmatira64" fetch="https://github.com/miguelmatira64" />
+  <remote name="MT6768Lab" fetch="https://gitlab.com/MT6768Lab" />
+  <remote name="clang" fetch="https://gitlab.com/sanjeevstunner"/>
+
+ <!-- Common Device Tree -->
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="miguelmatira64" revision="14"/>
+
+ <!-- Device Tree -->
+  <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot" remote="miguelmatira64" revision="14"/>
+
+ <!--Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="KernelTree" remote="MT6768Lab" revision="13"/>
+
+ <!-- Common Vendor Trees-->
+  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/>
+
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="dev" revision="lineage-20"/>
+
+ <!--Hardware -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="LineageOS" revision="lineage-20"/>
+
+ <!--Sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="LineageOS" revision="lineage-20"/>
+
+ <!--Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+
+</manifest>
